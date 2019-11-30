@@ -20,15 +20,15 @@ pipeline {
             
             steps{
             
-                        properties([
+            properties([
             parameters([string(
                 defaultValue: '', 
                 description: '', 
-                name: 'buildnumber_ci', 
+                name: 'param1', 
                 trim: false)
             ])
         ])
-        echo buildnumber_ci
+        echo param1
                 dir("${env.WORKSPACE}/deployment/"){
                 sh "sed -i -e 's/NodePort/LoadBalancer/g' frontend-service.yaml"
                 step([$class: 'KubernetesEngineBuilder', projectId: env.PROJECT_ID, clusterName: env.CLUSTER_NAME, location: env.LOCATION, manifestPattern: 'frontend-deployment.yaml', credentialsId: env.CREDENTIALS_ID, verifyDeployments: true])
