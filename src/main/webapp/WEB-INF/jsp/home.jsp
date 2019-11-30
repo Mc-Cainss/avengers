@@ -27,8 +27,8 @@
 									<b><i>${name}</i></b>, <fmt:message key="wazza" />
 								</c:otherwise>
 							</c:choose>
-							<textarea name="content" rows="3" cols="60"><c:if
-									test="${!empty replyTo}">@${replyTo} </c:if> Quoi de neuf?</textarea>
+							<textarea name="content" placeholder="Remember, be nice!" rows="3" cols="60"><c:if
+									test="${!empty replyTo}">@${replyTo} </c:if></textarea>
 							<br /> <input type="hidden" name="replyTo" value="${replyTo}" />
 							<input type="hidden" name="replyPid" value="${replyPid}" /> <input
 								type="submit" class=bouton value="<fmt:message key="update"/>" />
