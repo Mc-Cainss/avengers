@@ -45,9 +45,9 @@ pipeline {
     stage('Send remote pipeline') {
       steps{
         script {
-          BUILDNUM=${BUILD_NUMBER}
+          echo env.BUILD_NUMBER
           build job: 'CD-PIPELINE', parameters: [
-                string(name: 'param1', value: env.BUILD_NUMBER)
+                string(name: 'param1', value: 'env.BUILD_NUMBER')
                 ]
           }
         }
