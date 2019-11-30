@@ -15,6 +15,16 @@ pipeline {
             }
         
         stage('Deploy to avengerdeploy') {
+        properties([
+            parameters([string(
+                defaultValue: '', 
+                description: '', 
+                name: 'buildnumber_ci', 
+                trim: false)
+            ])
+        ])
+        echo buildnumber_ci
+        
             
             steps{
                 dir("${env.WORKSPACE}/deployment/"){
