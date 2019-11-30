@@ -292,7 +292,7 @@ p + p {text-indent:2em;margin-top:-1.5em;}
 form p + p {text-indent:0;}
 .alt {color:#666;font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;font-style:italic;font-weight:normal;}
 .altTitle{color:#fffff;font-family:"Aveng";}
-.divWelcome{text-align:center;height:34vw;color:#ffff;background-color:#0c2742;}
+.divWelcome{text-align:center;height:34vw;color:#ffffff;background-color:#0c2742;}
 .atlWelcome{font-family:"SanFran";font-style:normal;font-weight:lighter;}
 .dquo {margin-left:-.5em;}
 p.incr, .incr p {font-size:10px;line-height:1.44em;margin-bottom:1.5em;}
