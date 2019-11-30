@@ -19,7 +19,7 @@ pipeline {
                 echo param1
                 dir("${env.WORKSPACE}/deployment/"){
                 
-                sh "sed -i -e 's/NUMEROVERSION/'+param1+'/g' frontend-deployment.yaml"
+                sh "sed -i -e 's/NUMEROVERSION/'$param1$'/g' frontend-deployment.yaml"
                 sh "sed -i -e 's/NodePort/LoadBalancer/g' frontend-service.yaml"
                 step([$class: 'KubernetesEngineBuilder', projectId: env.PROJECT_ID, clusterName: env.CLUSTER_NAME, location: env.LOCATION, manifestPattern: 'frontend-deployment.yaml', credentialsId: env.CREDENTIALS_ID, verifyDeployments: true])
                 step([$class: 'KubernetesEngineBuilder', projectId: env.PROJECT_ID, clusterName: env.CLUSTER_NAME, location: env.LOCATION, manifestPattern: 'redis-master-deployment.yaml', credentialsId: env.CREDENTIALS_ID, verifyDeployments: true])
