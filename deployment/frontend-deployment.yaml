@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: mccains/avengers
+        image: mccains/avengers:NUMEROVERSION
         resources:
           requests:
             cpu: 100m
