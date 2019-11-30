@@ -36,6 +36,6 @@
 </div>
 
 <%@ include file="/WEB-INF/templates/posts.jspf" %>
-<%@ include file="/WEB-INF/templates/network.jspf" %>
+
 
 
