@@ -12,7 +12,7 @@
 <div class="span-20 prepend-1 timeline"
 	style="border-radius: 10px; margin-left: 4vw;">
 	<div class="centre">
-		<div class="span-15 prepend-1">
+		<div class="span-15 prepend-1" style="margin-top:2vw">
 
 			<c:choose>
 				<c:when test="${loggedUser eq name}">
