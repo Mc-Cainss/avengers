@@ -280,7 +280,7 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float:right;position:relative;}
 .prepend-top {margin-top:1.5em;}
 .append-bottom {margin-bottom:1.5em;}
-.box {padding:1.5em;margin-bottom:1.5em;background:#E5ECF9; border-radius:10px;}
+.box {padding:1.5em;margin-bottom:1.5em;background-color:#E5ECF9; border-radius:10px;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
@@ -292,7 +292,7 @@ p + p {text-indent:2em;margin-top:-1.5em;}
 form p + p {text-indent:0;}
 .alt {color:#666;font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;font-style:italic;font-weight:normal;}
 .altTitle{color:#fffff;font-family:"Aveng";}
-.divWelcome{text-align:center;height:34vw;color:#ffffff;background-color:#0c2742;}
+.divWelcome{text-align:center;height:34vw;color: #ffffff ;background-color:#0c2742;opacity: 0.6;}
 .atlWelcome{font-family:"SanFran";font-style:normal;font-weight:lighter;}
 .dquo {margin-left:-.5em;}
 p.incr, .incr p {font-size:10px;line-height:1.44em;margin-bottom:1.5em;}
