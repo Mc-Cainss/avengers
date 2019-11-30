@@ -1,22 +1,22 @@
-<div style="height: 5vw; width:auto;border-radius: 5px;">
-</div>
+<div style="height: 5vw; width: auto; border-radius: 5px;"></div>
 <div class="span-10 apprend-1 last">
 	<div class="divWelcome">
-		<h2 class="atlWelcome" style="margin-bottom:10px">
+		<h2 class="atlWelcome" style="margin-bottom: 10px">
 			<c:if test="${loggedUser eq name}">
 				<fmt:message key="welcome" />
 			</c:if>${name}</h2>
-			<div style="margin-top:5vw"></div>
-			<%@ include file="/WEB-INF/templates/network.jspf" %>
+		<div style="margin-top: 5vw"></div>
+		<%@ include file="/WEB-INF/templates/network.jspf"%>
 	</div>
 </div>
 <div class="span-20 prepend-1 timeline"
 	style="border-radius: 10px; margin-left: 4vw;">
-	<div class="span-15 prepend-1">
-		<div class="centre">
+	<div class="centre">
+		<div class="span-15 prepend-1">
+
 			<c:choose>
 				<c:when test="${loggedUser eq name}">
-					<div id="updateform" class="box" syle="">
+					<div id="updateform" class="box" style="margin-top:2w;">
 						<form method="post" action="!${name}">
 							<c:choose>
 								<c:when test="${!empty replyTo}">
