@@ -17,5 +17,3 @@ or if you have gradle installed on your machine and in your classpath:
 
 Start up an instance of the redis server, deploy your WAR and point your browser to (for the typical setup) [http://localhost:8080/retwisj](http://localhost:8080/retwisj)
 
-Pourquoi ça marche pas
-
