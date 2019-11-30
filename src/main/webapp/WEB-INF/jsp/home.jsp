@@ -28,10 +28,10 @@
 								</c:otherwise>
 							</c:choose>
 							<textarea name="content" rows="3" cols="60"><c:if
-									test="${!empty replyTo}">@${replyTo} </c:if></textarea>
+									test="${!empty replyTo}">@${replyTo} </c:if> Quoi de neuf?</textarea>
 							<br /> <input type="hidden" name="replyTo" value="${replyTo}" />
 							<input type="hidden" name="replyPid" value="${replyPid}" /> <input
-								type="submit" value="<fmt:message key="update"/>" />
+								type="submit" class=bouton value="<fmt:message key="update"/>" />
 						</form>
 					</div>
 				</c:when>
