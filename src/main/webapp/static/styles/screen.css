@@ -284,7 +284,8 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .centre box{
   margin: 0 auto;
 }
-.bouton{background-color:#E5ECF9; border-radius:10px;width: 6vw;height: 2vw;}
+.bouton{background-color:#0c2742; border-radius:10px;width: 6vw;height: 2vw;}
+.textPost{border-radius:10px;font-family:"SanFran";font-style:normal;font-weight:lighter;}
 .boxFollow {font-family:"SanFran";font-style:normal;font-weight:normal;padding:1.5em;height:1vw;;margin-bottom:1.5em;background-color:#E5ECF9; border-radius:10px;width: 9vw;margin-left: 2vw;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
