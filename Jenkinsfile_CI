@@ -48,7 +48,7 @@ pipeline {
           echo env.BUILD_NUMBER
           def Latest_Build_number = env.BUILD_NUMBER
           build job: 'CD-PIPELINE', parameters: [
-                string(name: 'Latest_Build_number', value: env.BUILD_NUMBER)
+                string(name: 'Latest_Build_number', value: env.BUILD_NUMBER, propagate: false)
                 ]
           }
         }
