@@ -10,17 +10,37 @@
    * This is a compressed file. See the sources in the 'src' directory.
 
 ----------------------------------------------------------------------- */
-@font-face {
-        font-family: "Avengers";
-        src: url('../polices/heroesassembleboldexpandital2.ttf');
-}
+
 
 @font-face {
     font-family: "Aveng";
     src: url("../polices/heroesassembleboldexpandital2.ttf") format("truetype");
 }
+@font-face {
+    font-family: "SanFran";
+    src: url("../polices/SF-UI-Display-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
-
+@font-face {
+    font-family: "SanFran";
+    src: url("../polices/SF-UI-Text-RegularItalic.otf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SanFran";
+    src: url("../polices/SF-UI-Display-Black.otf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "SanFran";
+    src: url("../polices/SF-UI-Display-Ultralight.otf") format("truetype");
+    font-style: normal;
+    font-weight: lighter;
+}
 /* print.css */
 body {line-height:1.5;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;color:#000;background:none;font-size:10pt;}
 .container {background:none;}

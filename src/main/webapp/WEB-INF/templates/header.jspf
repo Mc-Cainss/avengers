@@ -26,7 +26,7 @@
       <div class="container">
       	  <div class="header">
       	  	  <div class="span-15 prepend-1">
-      	  	     <h2 class="altTitle"><a href="<c:url value="/"/>""> Avengers Retwis-J É</a></h2>
+      	  	     <h2 class="altTitle"><a href="<c:url value="/"/>""> Avengers Retwis-J </a></h2>
       	  	  </div>
 			  <div class="span-8 last right-align">
 			    <% 

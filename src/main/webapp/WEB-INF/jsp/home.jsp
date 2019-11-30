@@ -1,5 +1,10 @@
-<div class="span-24 prepend-1 last">
- <h2 class="alt"><c:if test="${loggedUser eq name}"><fmt:message key="welcome"/> </c:if>${name}</h2>
+<div class="span-10 apprend-1 last">
+	<div class="divWelcome">
+		<h2 class="atlWelcome">
+			<c:if test="${loggedUser eq name}">
+				<fmt:message key="welcome" />
+			</c:if>${name}</h2>
+	</div>
 </div>
 <div class="span-15 prepend-1">
  <c:choose>
