@@ -47,7 +47,7 @@ pipeline {
         script {
           BUILDNUM=${BUILD_NUMBER}
           build job: 'CD-PIPELINE', parameters: [
-                string(name: 'param1', value: '$BUILD_NUMBER')
+                string(name: 'param1', value: env.BUILD_NUMBER)
                 ]
           }
         }
