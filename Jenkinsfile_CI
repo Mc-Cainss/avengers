@@ -42,13 +42,15 @@ pipeline {
       }
     }
     
-    stage('Send remote pipeline') {
-      steps{
-        script {
-          build job: 'CD-PIPELINE', propagate: true, wait: false
-          }
+    stage ('Invoke_pipeline') {
+              steps {
+                build job: 'CD-PIPELINE', parameters: [
+                string(name: 'param1', value: env.BUILD_NUMBER)
+                ]
+                }
+                
+            
         }
-      }
     }
     
 
