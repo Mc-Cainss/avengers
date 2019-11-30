@@ -1,6 +1,6 @@
 <div class="span-10 apprend-1 last">
 	<div class="divWelcome">
-		<h2 class="atlWelcome">
+		<h2 class="atlWelcome" style="margin-bottom:10px">
 			<c:if test="${loggedUser eq name}">
 				<fmt:message key="welcome" />
 			</c:if>${name}</h2>
