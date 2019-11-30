@@ -54,6 +54,7 @@ pipeline {
                   name: 'Latest_Build_Number', 
                   value: env.BUILD_NUMBER, 
                   propagate: false]
+                  ]
             )
           }
         }
