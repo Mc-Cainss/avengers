@@ -23,7 +23,6 @@ pipeline {
                 trim: false)
             ])
            ])
-            echo param1
             steps{
                 dir("${env.WORKSPACE}/deployment/"){
                 sh "sed -i -e 's/NodePort/LoadBalancer/g' frontend-service.yaml"
