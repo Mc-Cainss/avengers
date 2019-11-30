@@ -1,7 +1,7 @@
 <div style="height: 5vw; width:auto;border-radius: 5px;">
 </div>
 <div class="span-10 apprend-1 last">
-	<div class="divWelcome">
+	<div class=" divWelcome">
 		<h2 class="atlWelcome" style="margin-bottom:10px">
 			<c:if test="${loggedUser eq name}">
 				<fmt:message key="welcome" />
