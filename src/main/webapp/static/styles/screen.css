@@ -280,13 +280,13 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float:right;position:relative;}
 .prepend-top {margin-top:1.5em;}
 .append-bottom {margin-bottom:1.5em;}
-.box {padding:1.5em;margin-bottom:1.5em;background-color:#6b7485;color:#6b7485; border-radius:10px;}
+.box {padding:1.5em;margin-bottom:1.5em;background-color:#ffffff;color:#6b7485; border-radius:10px;}
 .centre box{
   margin: 0 auto;
 }
-.bouton{background-color:#0c2742; border-radius:10px;width: 6vw;height: 2vw;}
+.bouton{color:#ffffff;;background-color:#0c2742; border-radius:20px;width: 6vw;height: 2vw;}
 .textPost{border-radius:10px;font-family:"SanFran";font-style:normal;font-weight:lighter;}
-.boxFollow {font-family:"SanFran";font-style:normal;font-weight:normal;padding:1.5em;height:1vw;;margin-bottom:1.5em;background-color:#E5ECF9; border-radius:10px;width: 9vw;margin-left: 2vw;}
+.boxFollow {font-family:"SanFran";font-style:normal;font-weight:bold;padding:1.5em;height:1vw;;margin-bottom:1.5em;background-color:#E5ECF9; border-radius:10px;width: 9vw;margin-left: 2vw;}
 hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
 hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
