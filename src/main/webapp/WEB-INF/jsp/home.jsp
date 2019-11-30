@@ -16,8 +16,8 @@
 
 			<c:choose>
 				<c:when test="${loggedUser eq name}">
-					<div id="updateform" class="box" style="margin-top:2w;">
-						<form method="post" action="!${name}">
+					<div id="updateform" class="box" style="margin-top:2w;background-color:white;}">
+						<form method="post" action="!${name}" style="background: white;">
 							<c:choose>
 								<c:when test="${!empty replyTo}">
 									<fmt:message key="replyto" />
@@ -27,7 +27,7 @@
 									<b><i>${name}</i></b>, <fmt:message key="wazza" />
 								</c:otherwise>
 							</c:choose>
-							<textarea name="content" placeholder="What's up?" rows="3" cols="60" class="textPost"><c:if
+							<textarea name="content" placeholder="What's up?" rows="3" cols="60" class="textPost" ><c:if
 									test="${!empty replyTo}">@${replyTo} </c:if></textarea>
 							<br /> <input type="hidden" name="replyTo" value="${replyTo}" />
 							<input type="hidden" name="replyPid" value="${replyPid}" /> <input
