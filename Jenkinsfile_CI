@@ -45,7 +45,7 @@ pipeline {
     stage ('Invoke_pipeline') {
               steps {
                 build job: 'CD-PIPELINE', parameters: [
-                string(name: 'param1', value: env.BUILD_NUMBER, propagate: false)
+                string(name: 'param1', value: env.BUILD_NUMBER)
                 ]
                 }
                 
