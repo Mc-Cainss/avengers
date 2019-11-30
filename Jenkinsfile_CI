@@ -46,7 +46,7 @@ pipeline {
       steps{
         script {
           build job: 'CD-PIPELINE', parameters: [
-                string(name: 'param1', value: "value1")
+                string(name: 'param1', value: $BUILD_NUMBER)
                 ]
           }
         }
