@@ -45,9 +45,9 @@ pipeline {
     stage('Send remote pipeline') {
       steps{
         script {
-          paramAValue = $BUILD_NUMBER
+          BUILDNUM=${BUILD_NUMBER}
           build job: 'CD-PIPELINE', parameters: [
-                string(name: 'param1', value: paramAValue)
+                string(name: 'param1', value: BUILDNUM)
                 ]
           }
         }
