@@ -4,6 +4,7 @@
 			<c:if test="${loggedUser eq name}">
 				<fmt:message key="welcome" />
 			</c:if>${name}</h2>
+			<div style="margin-top:5vw"></div>
 			<%@ include file="/WEB-INF/templates/network.jspf" %>
 	</div>
 </div>
