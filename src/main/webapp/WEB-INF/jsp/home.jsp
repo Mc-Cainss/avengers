@@ -1,9 +1,6 @@
 <div style="height: 5vw; width:auto">
 </div>
 <div class="span-10 apprend-1 last">
-	<div style="margin-bottom:1vw">
-	
-	</div>
 	<div class="divWelcome">
 		<h2 class="atlWelcome" style="margin-bottom:10px">
 			<c:if test="${loggedUser eq name}">
