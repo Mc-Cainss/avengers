@@ -45,7 +45,9 @@ pipeline {
     stage('Send remote pipeline') {
       steps{
         script {
-          build job: 'CD-PIPELINE', parameters: [[$class: 'StringParameterValue', name: 'test', value: $BUILD_NUMBER]]
+          build job: 'CD-PIPELINE', parameters: [
+                string(name: 'param1', value: "value1")
+                ]
           }
         }
       }
