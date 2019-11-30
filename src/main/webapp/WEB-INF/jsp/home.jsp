@@ -27,7 +27,7 @@
 									<b><i>${name}</i></b>, <fmt:message key="wazza" />
 								</c:otherwise>
 							</c:choose>
-							<textarea name="content" placeholder="What's up?" rows="3" cols="60"><c:if
+							<textarea name="content" placeholder="What's up?" rows="3" cols="60" class="textPost"><c:if
 									test="${!empty replyTo}">@${replyTo} </c:if></textarea>
 							<br /> <input type="hidden" name="replyTo" value="${replyTo}" />
 							<input type="hidden" name="replyPid" value="${replyPid}" /> <input
