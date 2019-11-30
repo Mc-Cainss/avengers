@@ -47,7 +47,7 @@ pipeline {
         script {
            echo env.BUILD_NUMBER
            def Latest_Build_Number = env.BUILD_NUMBER
-           def result = build( job: 'CD-PIPELINE', parameters: [$class: 'StringParameterValue, name: 'Latest_Build_Number', value: env.BUILD_NUMBER, propagate: false]
+           def result = build( job: 'CD-PIPELINE', parameters: [$class: 'StringParameterValue', name: 'Latest_Build_Number', value: env.BUILD_NUMBER, propagate: false]
             )
             currentBuild.result='UNSTABLE'
           }
