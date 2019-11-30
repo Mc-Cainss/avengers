@@ -24,7 +24,7 @@
 									<i>${replyTo}</i>:
 	  	</c:when>
 								<c:otherwise>
-									<b><i>@${name}</i></b>, 
+									<b style="color:white"><i>@${name}</i></b>, 
 								</c:otherwise>
 							</c:choose>
 							<textarea name="content" placeholder="What's up?" rows="3" cols="60" class="textPost" ><c:if
