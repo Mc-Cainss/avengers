@@ -1,4 +1,4 @@
-<div style="height: 5vw; width:auto">
+<div style="height: 5vw; width:auto;border-radius: 5px;">
 </div>
 <div class="span-10 apprend-1 last">
 	<div class="divWelcome">
