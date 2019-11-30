@@ -6,7 +6,7 @@
 				<fmt:message key="welcome" />
 			</c:if>${name}</h2>
 		<div style="margin-top: 5vw"></div>
-		<%@ include file="/WEB-INF/templates/network.jspf"%>
+		<%@ include file="/WEB-INF/templates/networkDetails.jspf"%>
 	</div>
 </div>
 <div class="span-20 prepend-1 timeline"

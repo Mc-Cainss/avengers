@@ -15,5 +15,5 @@
 	</c:choose>
 	</div>
 </div>
-<%@ include file="/WEB-INF/templates/networkDetails.jspf" %>
+<%@ include file="/WEB-INF/templates/network.jspf" %>
 <%@ include file="/WEB-INF/templates/posts.jspf" %>
