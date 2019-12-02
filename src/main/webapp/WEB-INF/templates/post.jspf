@@ -6,7 +6,7 @@
 		      <div style="margin-top:5px"> ${p.content} </div>
 		      <br/>
 		      <!-- link to post -->
-		      <a href="<c:url value="/status?pid=${p.pid}"/>"><fmt:message key="${p.time}"><fmt:param value="${p.timeArg}"/></fmt:message></a>
+		      <a style="margin-left:30vw" href="<c:url value="/status?pid=${p.pid}"/>"><fmt:message key="${p.time}"><fmt:param value="${p.timeArg}"/></fmt:message></a>
 			  <!-- reply connection -->
 			  <c:if test="${!empty p.replyPid}">
 			     <a href="<c:url value="/status?pid=${p.replyPid}"/>"><fmt:message key="inreplyto"/> ${p.replyTo}</a>
