@@ -29,7 +29,7 @@ public class Post {
 	private String replyPid;
 	private String replyUid;
 	
-	/*private String likes;
+	private String likes;
 
 	public String getLikes() {
 		return likes;
@@ -37,7 +37,7 @@ public class Post {
 
 	public void setLikes(String likes) {
 		this.likes = likes;
-	}*/
+	}
 
 	/**
 	 * Returns the content.
