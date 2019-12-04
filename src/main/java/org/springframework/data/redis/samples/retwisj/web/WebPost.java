@@ -32,7 +32,7 @@ public class WebPost {
 	private String time;
 	private String timeArg;
 	
-/*	private String likes;
+	private String likes;
 
 
 
@@ -42,7 +42,7 @@ public class WebPost {
 
 	public void setLikes(String likes) {
 		this.likes = likes;
-	}*/
+	}
 
 	public WebPost() {
 	}
@@ -61,7 +61,7 @@ public class WebPost {
 		}
 		this.replyPid = post.getReplyPid();
 		this.content = post.getContent();
-		//this.likes = post.getLikes();
+		this.likes = post.getLikes();
 	}
 
 	/**
@@ -165,13 +165,13 @@ public class WebPost {
 		Post post = new Post();
 		post.setReplyPid(replyPid);
 		post.setContent(content);
-		//post.setLikes(likes);
+		post.setLikes(likes);
 		return post;
 	}
 
 	@Override
 	public String toString() {
 		return "WebPost [content=" + content + ", name=" + name + ", pid=" + pid + ", replyTo=" + replyTo
-				+ ", replyPid=" + replyPid + ", time=" + time +/* ", likes=" + likes +*/ "]";
+				+ ", replyPid=" + replyPid + ", time=" + time + ", likes=" + likes + "]";
 	}
 }
