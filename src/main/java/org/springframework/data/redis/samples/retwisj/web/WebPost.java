@@ -165,13 +165,13 @@ public class WebPost {
 		Post post = new Post();
 		post.setReplyPid(replyPid);
 		post.setContent(content);
-		post.setLikes(likes);
+		//post.setLikes(likes);
 		return post;
 	}
 
 	@Override
 	public String toString() {
 		return "WebPost [content=" + content + ", name=" + name + ", pid=" + pid + ", replyTo=" + replyTo
-				+ ", replyPid=" + replyPid + ", time=" + time + ", likes=" + likes + "]";
+				+ ", replyPid=" + replyPid + ", time=" + time +/* ", likes=" + likes +*/ "]";
 	}
 }
