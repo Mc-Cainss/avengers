@@ -88,7 +88,7 @@ abstract class KeyUtils {
 		return UID + uid + ":common:uid:" + targetUid;
 	}
 	
-	/*static String likes(String uid) {
+	static String likes(String uid) {
 		return UID + uid + ":likes";
-	}*/
+	}
 }
