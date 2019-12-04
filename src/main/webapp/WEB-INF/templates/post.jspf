@@ -19,7 +19,7 @@
 				<form action="/like/${pid}" ">
 		
 					<input type="button" class=bouton value="<fmt:message key="likes"/>" />
-					<h4>${fn:length(likes) </h4>
+					<!-- <h4>${fn:length(likes) </h4>-->
 				</form>
 		
 				</p>
