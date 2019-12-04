@@ -27,4 +27,4 @@
 		   </div>
 		   </c:forEach>
 
-		   //Ajouter le bouton like (similaire au boutton post dans l'appel de l'action)
+		    <!-- Ajouter le bouton like (similaire au boutton post dans l'appel de l'action) -->
