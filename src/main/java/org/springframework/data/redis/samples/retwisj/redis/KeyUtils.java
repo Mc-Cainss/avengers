@@ -87,4 +87,8 @@ abstract class KeyUtils {
 	static String commonFollowers(String uid, String targetUid) {
 		return UID + uid + ":common:uid:" + targetUid;
 	}
+	
+	static String likes(String uid) {
+		return UID + uid + ":likes";
+	}
 }

@@ -28,6 +28,16 @@ public class Post {
 	private String time = String.valueOf(System.currentTimeMillis());
 	private String replyPid;
 	private String replyUid;
+	
+	private String likes;
+
+	public String getLikes() {
+		return likes;
+	}
+
+	public void setLikes(String likes) {
+		this.likes = likes;
+	}
 
 	/**
 	 * Returns the content.
