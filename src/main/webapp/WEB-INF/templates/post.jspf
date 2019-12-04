@@ -6,7 +6,7 @@
 		      <div style="margin-top:5px"> ${p.content} </div>
 		      <br/>
 		      <!-- link to post -->
-		      <a style="margin-left:30vw" href="<c:url value="/status?pid=${p.pid}"/>"><fmt:message key="${p.time}"><fmt:param value="${p.timeArg}"/></fmt:message></a>
+		      <a style="margin-left:26vw" href="<c:url value="/status?pid=${p.pid}"/>"><fmt:message key="${p.time}"><fmt:param value="${p.timeArg}"/></fmt:message></a>
 			  <!-- reply connection -->
 			  <c:if test="${!empty p.replyPid}">
 			     <a href="<c:url value="/status?pid=${p.replyPid}"/>"><fmt:message key="inreplyto"/> ${p.replyTo}</a>
@@ -18,7 +18,7 @@
 		
 				<form action="/like/${pid}" ">
 		
-					<input type="button" class=boutonLike value="<fmt:message key="likes"/>" />
+					<input type="button" class=boutonLike  />
 					<!--   <h4><fmt:message key="following"/>: ${fn:length(following)}</h4> -->
 				</form>
 		
