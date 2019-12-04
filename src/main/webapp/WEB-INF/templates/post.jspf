@@ -15,6 +15,17 @@
 			  <c:if test="${loggedIn}">
 			    <a href="<c:url value="/!${loggedUser}?replyto=${p.name}&replypid=${p.pid}"/>"><fmt:message key="reply"/></a>
 			  </c:if>
+			  
+			  <c:if test="${loggedIn}">
+			    <form  action="/like/!{pid}" style="background: white;">
+			    <input type="button" class=bouton value="<fmt:message key="like"/>" />
+			    </form>
+				<!-- <a href="<c:url value="/!${loggedUser}?replyto=${p.name}&replypid=${p.pid}"/>"><fmt:message key="reply"/></a>
+				-->
+				<h4>${fn:length(likes) </h4>
+			  </c:if>
             </p>
 		   </div>
 		   </c:forEach>
+
+		   //Ajouter le bouton like (similaire au boutton post dans l'appel de l'action)
