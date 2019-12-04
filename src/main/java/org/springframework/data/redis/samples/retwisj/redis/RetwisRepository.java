@@ -380,7 +380,7 @@ public class RetwisRepository {
 		//final String likes = "likes";
 
 		SortQuery<String> query = SortQueryBuilder.sort(key).noSort().get(pidKey).get(pid + uid).get(pid + content).get(
-				pid + replyPid).get(pid + replyUid).get(pid + time).get(pid + likes).limit(range.begin, range.end).build();
+				pid + replyPid).get(pid + replyUid).get(pid + time)/*.get(pid + likes)*/.limit(range.begin, range.end).build();
 		BulkMapper<WebPost, String> hm = new BulkMapper<WebPost, String>() {
 			
 			public WebPost mapBulk(List<String> bulk) {
