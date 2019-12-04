@@ -32,7 +32,7 @@ public class WebPost {
 	private String time;
 	private String timeArg;
 	
-	private String likes;
+/*	private String likes;
 
 
 
@@ -42,7 +42,7 @@ public class WebPost {
 
 	public void setLikes(String likes) {
 		this.likes = likes;
-	}
+	}*/
 
 	public WebPost() {
 	}
@@ -61,7 +61,7 @@ public class WebPost {
 		}
 		this.replyPid = post.getReplyPid();
 		this.content = post.getContent();
-		this.likes = post.getLikes();
+		//this.likes = post.getLikes();
 	}
 
 	/**

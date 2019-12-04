@@ -197,11 +197,11 @@ public class RetwisController {
 		return "status";
 	}
 	
-	@RequestMapping("/like/!{pid}")
+	/*@RequestMapping("/like/!{pid}")
 	public String like(@PathVariable String pid) {
 		retwis.like(pid);
 		return "timeline";
-	}
+	} */
 
 	private void checkUser(String username) {
 		if (!retwis.isUserValid(username)) {
