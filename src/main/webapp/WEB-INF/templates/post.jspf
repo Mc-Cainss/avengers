@@ -8,7 +8,7 @@
 		      <!-- link to post -->
 		      <a style="margin-left:24vw" href="<c:url value="/status?pid=${p.pid}"/>"><fmt:message key="${p.time}"><fmt:param value="${p.timeArg}"/></fmt:message></a>
 			  
-			  <form action="/like/${pid}" ">
+			  <form action="/like/${pid}" >
 		
 					<input type="button" class=boutonLike  />
 					<!--   <h4><fmt:message key="following"/>: ${fn:length(following)}</h4> -->
