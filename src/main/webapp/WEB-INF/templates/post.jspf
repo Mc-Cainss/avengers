@@ -18,8 +18,8 @@
 		
 				<form action="/like/${pid}" ">
 		
-					<input type="button" class=bouton value="<fmt:message key="likes"/>" />
-					<!-- <h4>${fn:length(likes) </h4>-->
+					<input type="button" class=boutonLike value="<fmt:message key="likes"/>" />
+					<!--   <h4><fmt:message key="following"/>: ${fn:length(following)}</h4> -->
 				</form>
 		
 				</p>
