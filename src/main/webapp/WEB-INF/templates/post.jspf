@@ -14,8 +14,14 @@
 			  &nbsp;&nbsp;&nbsp;
 			  <c:if test="${loggedIn}">
 			    <a href="<c:url value="/!${loggedUser}?replyto=${p.name}&replypid=${p.pid}"/>"><fmt:message key="reply"/></a>
-			  </c:if>
-            </p>
+				</c:if>
+		
+				<form action="/like/${pid}" ">
+		
+					<input type="button" class=bouton value="<fmt:message key="likes"/>" />
+				</form>
+		
+				</p>
 		   </div>
 		   </c:forEach>
 
