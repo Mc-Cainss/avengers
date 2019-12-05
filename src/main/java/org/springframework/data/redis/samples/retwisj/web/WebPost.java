@@ -33,6 +33,8 @@ public class WebPost {
 	private String timeArg;
 	
 	private String likes;
+	
+	private boolean isLiked;
 
 
 
@@ -159,6 +161,16 @@ public class WebPost {
 	 */
 	public void setReplyTo(String replyName) {
 		this.replyTo = replyName;
+	}
+	
+	
+
+	public boolean isLiked() {
+		return isLiked;
+	}
+
+	public void setLiked(boolean isLiked) {
+		this.isLiked = isLiked;
 	}
 
 	public Post asPost() {

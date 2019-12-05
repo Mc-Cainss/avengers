@@ -202,6 +202,12 @@ public class RetwisController {
 		retwis.like(pid);
 		return "timeline";
 	} 
+	
+	@RequestMapping("/isLike/!{pid}")
+	public boolean isLike(@PathVariable String pid) {
+		
+		return retwis.isLiked(pid);
+	} 
 
 	private void checkUser(String username) {
 		if (!retwis.isUserValid(username)) {
