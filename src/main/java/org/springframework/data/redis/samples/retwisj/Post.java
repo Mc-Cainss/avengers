@@ -15,6 +15,7 @@
  */
 package org.springframework.data.redis.samples.retwisj;
 
+import java.util.List;
 
 /**
  * Class describing a post.
@@ -29,13 +30,13 @@ public class Post {
 	private String replyPid;
 	private String replyUid;
 	
-	private String likes;
+	private List<String> likes;
 
-	public String getLikes() {
+	public List<String> getLikes() {
 		return likes;
 	}
 
-	public void setLikes(String likes) {
+	public void setLikes(List<String> likes) {
 		this.likes = likes;
 	}
 

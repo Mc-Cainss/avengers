@@ -1,4 +1,4 @@
-<h2 ><fmt:message key="welcome"/></h2>
+<h2 style="text-align:center"  ><fmt:message key="welcome"/></h2>
 
 <div class="span-11 box">
   <h2><fmt:message key="signin"/></h2>

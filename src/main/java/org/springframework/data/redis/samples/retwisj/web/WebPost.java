@@ -15,6 +15,8 @@
  */
 package org.springframework.data.redis.samples.retwisj.web;
 
+import java.util.List;
+
 import org.springframework.data.redis.samples.retwisj.Post;
 
 /**
@@ -32,17 +34,17 @@ public class WebPost {
 	private String time;
 	private String timeArg;
 	
-	private String likes;
+	private List<String> likes;
 	
 	private boolean isLiked;
 
 
 
-	public String getLikes() {
+	public List<String> getLikes() {
 		return likes;
 	}
 
-	public void setLikes(String likes) {
+	public void setLikes(List<String> likes) {
 		this.likes = likes;
 	}
 

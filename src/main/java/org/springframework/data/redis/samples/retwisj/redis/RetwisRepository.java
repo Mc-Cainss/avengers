@@ -260,7 +260,7 @@ public class RetwisRepository {
 	}
 	
 	public void like(String pid) {
-		if(isLiked(RetwisSecurity.getUid(),pid))
+		if(isLiked(pid))
 		{
 			likes(pid).remove(RetwisSecurity.getUid());
 		}
