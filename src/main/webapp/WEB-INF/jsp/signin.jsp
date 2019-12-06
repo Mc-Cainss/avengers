@@ -1,5 +1,5 @@
-<div class="backgroungSignIn">
-	<h2 style="text-align: center;color:#ffffff">
+
+	<h2 style="text-align: center">
 		<fmt:message key="welcome" />
 	</h2>
 
@@ -68,4 +68,3 @@
 
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-</div>
