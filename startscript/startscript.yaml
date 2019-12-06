@@ -17,8 +17,6 @@ spec:
           imagePullPolicy: Always
           securityContext:
             privileged: true
-          ports:
-          - port: 9000
           env:
           - name: STARTUP_SCRIPT
             value: |
