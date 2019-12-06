@@ -273,11 +273,7 @@ public class RetwisRepository {
 		return likes(pid).contains(RetwisSecurity.getUid());
 	}
 	
-	public void stopLike(String pid) {
 	
-		likes(pid).remove(RetwisSecurity.getUid());
-	} 
-
 	public void follow(String targetUser) {
 		String targetUid = findUid(targetUser);
 
