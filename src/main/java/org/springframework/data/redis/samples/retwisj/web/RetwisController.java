@@ -199,7 +199,7 @@ public class RetwisController {
 	
 	@RequestMapping("/like/!{pid}")
 	public String like(@PathVariable String pid) {
-		retwis.like(pid);
+		//retwis.like(pid);
 		return "timeline";
 	} 
 	
