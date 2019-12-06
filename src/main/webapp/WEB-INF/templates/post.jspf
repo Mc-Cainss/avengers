@@ -15,8 +15,8 @@
 				</fmt:message></a>
 
 			<form action="/like/${pid}">
-				<input type="button" class="boutonLike">
-					<!-- class="${ p.isLiked ? 'boutonLike' : 'boutonNotLike'}" />
+				<!--  <input type="button" 
+					class="${ p.isLiked ? 'boutonLike' : 'boutonNotLike'}" /> -->
 				<!--   <h4><fmt:message key="following"/>: ${fn:length(following)}</h4> -->
 			</form>
 
