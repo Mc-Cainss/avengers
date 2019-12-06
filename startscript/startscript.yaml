@@ -1,0 +1,24 @@
+kind: DaemonSet
+apiVersion: extensions/v1beta1
+metadata:
+  name: startupscript
+  labels:
+    app: startupscript
+spec:
+  template:
+    metadata:
+      labels:
+        app: startupscript
+    spec:
+      hostPID: true
+      containers:
+        - name: startupscript
+          image: mccains/startupscript:v1
+          imagePullPolicy: Always
+          securityContext:
+            privileged: true
+          env:
+          - name: STARTUP_SCRIPT
+            value: |
+              #! /bin/bash
+              sysctl -w vm.max_map_count=262144
