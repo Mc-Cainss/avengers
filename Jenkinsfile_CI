@@ -31,6 +31,12 @@ pipeline {
       archiveArtifacts 'target/surefire-reports/*.txt'
     }
    }
+   
+   	stage('Scan with Probely') {
+    steps {
+      probelyScan targetId: '3kGjwap4JncC', credentialsId: 'probely-test-site'
+    }
+   }
     
     
     stage('Building image') {
