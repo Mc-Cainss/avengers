@@ -1,5 +1,5 @@
 TAG=v1
-IMAGE=mccains/avengers/startupscript
+IMAGE=mccains/startupscript
 
 .PHONY: build push
 
