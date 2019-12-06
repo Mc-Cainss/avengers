@@ -31,7 +31,7 @@ public class Post {
 	private String replyUid;
 	
 /*	private List<String> likes;
-
+//test
 	public List<String> getLikes() {
 		return likes;
 	}
