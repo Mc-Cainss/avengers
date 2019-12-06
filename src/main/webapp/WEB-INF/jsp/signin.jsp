@@ -1,4 +1,4 @@
-<div>
+<div class="backgroungSignIn">
 	<h2 style="text-align: center;color:#ffffff">
 		<fmt:message key="welcome" />
 	</h2>
