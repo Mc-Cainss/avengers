@@ -15,12 +15,12 @@
 					<fmt:param value="${p.timeArg}" />
 				</fmt:message></a>
 
-			<form action="/like/${pid}">
+		<!--<form action="/like/${pid}">
 				  <input type="button" class=boutonLike />
-					<!-- class="${ p.isLiked ? 'boutonLike' : 'boutonNotLike'}" /> -->
-				<!--   <h4><fmt:message key="following"/>: ${fn:length(following)}</h4> -->
+					 class="${ p.isLiked ? 'boutonLike' : 'boutonNotLike'}" />
+			
 			</form>
-
+ -->
 			<!-- reply connection -->
 			<c:if test="${!empty p.replyPid}">
 				<a href="<c:url value="/status?pid=${p.replyPid}"/>"><fmt:message
