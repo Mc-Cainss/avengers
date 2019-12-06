@@ -396,10 +396,10 @@ public class RetwisRepository {
 		};
 		List<WebPost> sort = template.sort(query, hm);
 		
-		for(WebPost webpost:sort) {
+		/*for(WebPost webpost:sort) {
 			boolean isLiked = isLiked(webpost.getPid());
 			webpost.setLiked(isLiked);
-		}
+		} */
 
 		return sort;
 	}

@@ -2,7 +2,7 @@
 <c:forEach var="p" items="${posts}">
 	<hr />
 	<div class="post">
-		<form action="/isLike/${pid}">
+		
 		<p>
 			<userA class="user" href="<c:url value="/!${p.name}"/>"> <b>${p.name}</b></userA>
 		<div style="margin-top: 5px">${p.content}</div>
@@ -16,8 +16,8 @@
 				</fmt:message></a>
 
 			<form action="/like/${pid}">
-				  <input type="button" 
-					class="${ p.isLiked ? 'boutonLike' : 'boutonNotLike'}" /> 
+				  <input type="button" class=boutonLike />
+					<!-- class="${ p.isLiked ? 'boutonLike' : 'boutonNotLike'}" /> -->
 				<!--   <h4><fmt:message key="following"/>: ${fn:length(following)}</h4> -->
 			</form>
 
@@ -34,8 +34,7 @@
 			</c:if>
 		</div>
 		</p>
-		
-		</form>
+
 	</div>
 </c:forEach>
 
