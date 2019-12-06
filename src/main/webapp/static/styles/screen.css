@@ -288,7 +288,7 @@ div.colborder {padding-right:24px;margin-right:25px;border-right:1px solid #eee;
 .inputSignIn{border-radius:10px;border:none;font-family:"SanFran";font-style: normal;font-weight: lighter;}
 .boutonLike{background:url("../images/Like_30.png"); width:24px;height:20px;border:none}
 .boutonNotLike{background:url("../images/LikeRed_30.png"); width:24px;height:20px;border:none}
-.backgroungSignIn{background:url("../images/Ave.jpg");width:auto;height:auto;}
+.backgroungSignIn{background:url("../images/LikeRed_30.png");width:auto;height:auto;}
 .textPost{border: none;border-radius:10px;font-family:"SanFran";font-style:normal;font-weight:lighter;margin-left: 2.5vw;}
 .boxFollow {font-family:"SanFran";font-style:normal;font-weight:bold;padding:1.5em;height:1vw;;margin-bottom:1.5em;background-color:#E5ECF9; border-radius:10px;width: 9vw;margin-left: 2vw;}
 hr {background:#0c2742;color:#0c2742;clear:both;float:none;width:100%;height:.1em;margin-top:1vw;margin-bottom:1vw;border:none;}
