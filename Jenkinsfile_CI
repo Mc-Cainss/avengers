@@ -30,6 +30,16 @@ pipeline {
        sh "mvn sonar:sonar -Dsonar.projectKey=avengers -Dsonar.host.url=http://34.77.225.226:8081/sonar -Dsonar.login=bbd8eb7b0c27762e324e111e8f4a06966c34ede4 -X"
 	}  
   }
+    stage("Quality Gate"){
+    steps{
+          timeout(time: 1, unit: 'HOURS') {
+              def qg = waitForQualityGate()
+              if (qg.status != 'OK') {
+                  error "Pipeline aborted due to quality gate failure: ${qg.status}"
+              }
+          }
+	 }
+      }
 	stage('Results') {
     steps {
       junit '**/target/surefire-reports/TEST-*.xml'
