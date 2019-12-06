@@ -13,7 +13,7 @@ spec:
       hostPID: true
       containers:
         - name: startupscript
-          image: mccains/avengers/startupscript:v1
+          image: mccains/startupscript:v1
           imagePullPolicy: Always
           securityContext:
             privileged: true
