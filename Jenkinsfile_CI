@@ -26,7 +26,9 @@ pipeline {
     }
     }
     stage ('Analyse SonarQube'){
+    steps{
        sh "mvn sonar:sonar -Dsonar.projectKey=avengers -Dsonar.host.url=http://34.77.225.226:8081/sonar -Dsonar.login=bbd8eb7b0c27762e324e111e8f4a06966c34ede4 -X"
+	}  
   }
 	stage('Results') {
     steps {
