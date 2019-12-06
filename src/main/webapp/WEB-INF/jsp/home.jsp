@@ -46,5 +46,5 @@
 
 	<%@ include file="/WEB-INF/templates/posts.jspf"%>
 </div>
-
+<!-- test -->
 
