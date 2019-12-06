@@ -25,7 +25,7 @@
 					href="<c:url value="/!${loggedUser}?replyto=${p.name}&replypid=${p.pid}"/>"><fmt:message
 						key="reply" /></a>
 			</c:if>
-			z
+
 		</p>
 	</div>
 </c:forEach>
