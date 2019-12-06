@@ -20,13 +20,14 @@
   	  <link rel="stylesheet" href="<c:url value="/static/styles/custom.css"/>" type="text/css" media="screen, projection"/> 
   	  <link rel="icon" type="image/x-ico" href="<c:url value="/static/images/favicon.ico"/>">
 	  <title>Retwis-J Avengers</title>	
-	  <div class= "backgroungSignIn"></div>
+	  
 	</head>
 
     <body>
       <div class="container">
       	  <div class="header">
       	  	  <div class="span-24 prepend-1">
+      	  	  <div class= "backgroungSignIn"></div>
       	  	     <h2 class="altTitle"><aTitle href="<c:url value="/"/>""> Avengers Retwis-J </aTitle></h2>
       	  	  </div>
 			  <div class="span-8 last right-align">
