@@ -167,9 +167,9 @@ public class RetwisRepository {
 		}
 		
 		// update likes
-		for (String likes : likes(uid)) {
+		/*for (String likes : likes(uid)) {
 			timeline(likes).addFirst(uid);
-		}
+		} */
 
 		timeline.addFirst(pid);
 		handleMentions(p, pid, replyName);
