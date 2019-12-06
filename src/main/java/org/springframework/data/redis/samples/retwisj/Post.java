@@ -30,7 +30,7 @@ public class Post {
 	private String replyPid;
 	private String replyUid;
 	
-	private List<String> likes;
+/*	private List<String> likes;
 
 	public List<String> getLikes() {
 		return likes;

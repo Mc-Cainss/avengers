@@ -134,9 +134,9 @@ public class RetwisRepository {
 		return users.range(range.begin, range.end);
 	}
 	
-	public Collection<String> getLikes(String pid) {
+/*	public Collection<String> getLikes(String pid) {
 		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}
+	}*/
 
 	public void post(String username, WebPost post) {
 		Post p = post.asPost();
@@ -166,11 +166,7 @@ public class RetwisRepository {
 			timeline(follower).addFirst(pid);
 		}
 		
-		// update likes
-		/*for (String likes : likes(uid)) {
-			timeline(likes).addFirst(uid);
-		} */
-
+		
 		timeline.addFirst(pid);
 		handleMentions(p, pid, replyName);
 	}
@@ -258,7 +254,7 @@ public class RetwisRepository {
 	public boolean isFollowing(String uid, String targetUid) {
 		return following(uid).contains(targetUid);
 	}
-	
+	/*
 	public void like(String pid) {
 		if(isLiked(pid))
 		{
@@ -272,7 +268,7 @@ public class RetwisRepository {
 	public boolean isLiked( String pid) {
 		return likes(pid).contains(RetwisSecurity.getUid());
 	}
-	
+	*/
 	
 	public void follow(String targetUser) {
 		String targetUid = findUid(targetUser);
@@ -333,10 +329,10 @@ public class RetwisRepository {
 		return new DefaultRedisList<String>(KeyUtils.posts(uid), template);
 	}
 	
-	private RedisList<String> likes(String uid) {
+/*	private RedisList<String> likes(String uid) {
 		return new DefaultRedisList<String>(KeyUtils.likes(uid), template);
 	}
-
+*/
 	// various util methods
 
 	private String replaceReplies(String content) {
@@ -360,10 +356,10 @@ public class RetwisRepository {
 	}
 
 	
-	private List<String> covertUidsToLikes(String key) {
+	/*private List<String> covertUidsToLikes(String key) {
 		return template.sort(SortQueryBuilder.sort(key).noSort().get("pid:*->likes").build());
 	} 
-	
+	*/
 	
 	private List<WebPost> convertPidsToPosts(String key, Range range) {
 		String pid = "pid:*->";
@@ -373,10 +369,10 @@ public class RetwisRepository {
 		final String replyPid = "replyPid";
 		final String replyUid = "replyUid";
 		final String time = "time";
-		final String likes = "likes";
+		//final String likes = "likes";
 
 		SortQuery<String> query = SortQueryBuilder.sort(key).noSort().get(pidKey).get(pid + uid).get(pid + content).get(
-				pid + replyPid).get(pid + replyUid).get(pid + time).get(pid + likes).limit(range.begin, range.end).build();
+				pid + replyPid).get(pid + replyUid).get(pid + time)/*.get(pid + likes)*/.limit(range.begin, range.end).build();
 		BulkMapper<WebPost, String> hm = new BulkMapper<WebPost, String>() {
 			
 			public WebPost mapBulk(List<String> bulk) {
@@ -389,14 +385,14 @@ public class RetwisRepository {
 				map.put(replyPid, iterator.next());
 				map.put(replyUid, iterator.next());
 				map.put(time, iterator.next());
-				map.put(likes, iterator.next());
+				//map.put(likes, iterator.next());
 
 				return convertPost(pid, map);
 			}
 		};
 		List<WebPost> sort = template.sort(query, hm);
 		
-		/*for(WebPost webpost:sort) {
+	/*	for(WebPost webpost:sort) {
 			boolean isLiked = isLiked(webpost.getPid());
 			webpost.setLiked(isLiked);
 		} */
@@ -411,7 +407,7 @@ public class RetwisRepository {
 		wPost.setName(findName(post.getUid()));
 		wPost.setReplyTo(findName(post.getReplyUid()));
 		wPost.setContent(replaceReplies(post.getContent()));
-		wPost.setLikes(post.getLikes());
+		//wPost.setLikes(post.getLikes());
 		
 		return wPost;
 	}

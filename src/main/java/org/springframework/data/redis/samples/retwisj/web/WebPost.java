@@ -34,9 +34,9 @@ public class WebPost {
 	private String time;
 	private String timeArg;
 	
-	private List<String> likes;
+	/*private List<String> likes;
 	
-	private boolean isLiked;
+	//private boolean isLiked;
 
 
 
@@ -46,7 +46,7 @@ public class WebPost {
 
 	public void setLikes(List<String> likes) {
 		this.likes = likes;
-	}
+	}*/
 
 	public WebPost() {
 	}
@@ -65,7 +65,7 @@ public class WebPost {
 		}
 		this.replyPid = post.getReplyPid();
 		this.content = post.getContent();
-		this.likes = post.getLikes();
+		//this.likes = post.getLikes();
 	}
 
 	/**
@@ -167,25 +167,25 @@ public class WebPost {
 	
 	
 
-	public boolean isLiked() {
+	/*public boolean isLiked() {
 		return isLiked;
 	}
 
 	public void setLiked(boolean isLiked) {
 		this.isLiked = isLiked;
-	}
+	}*/
 
 	public Post asPost() {
 		Post post = new Post();
 		post.setReplyPid(replyPid);
 		post.setContent(content);
-		post.setLikes(likes);
+		//post.setLikes(likes);
 		return post;
 	}
 
 	@Override
 	public String toString() {
 		return "WebPost [content=" + content + ", name=" + name + ", pid=" + pid + ", replyTo=" + replyTo
-				+ ", replyPid=" + replyPid + ", time=" + time + ", likes=" + likes + "]";
+				+ ", replyPid=" + replyPid + ", time=" + time + "]";
 	}
 }
