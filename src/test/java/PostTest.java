@@ -17,7 +17,7 @@ public class PostTest {
 	@Test
 	public void setContentTest() {
 		postTest.setContent("test");
-		assertEquals(postTest.getContent(),"mabite");
+		assertEquals(postTest.getContent(),"test");
 	}
 
 	@Test
