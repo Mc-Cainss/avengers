@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Costin Leau
  */
 @Controller
-public class RetwisController extends Exception{
+public class RetwisController {
 
 	@Autowired
 	private final RetwisRepository retwis;
