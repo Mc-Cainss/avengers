@@ -19,6 +19,8 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.data.redis.samples.retwisj.web.Error500Exception;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.samples.retwisj.Post;
 import org.springframework.data.redis.samples.retwisj.Range;
@@ -136,7 +138,7 @@ public class RetwisController {
 		checkUser(name);
 		if(post.getContent().contains("fuck"))
 		{
-			throw new Exception("Error 500");
+			throw new Error500Exception();
 			
 		}
 		retwis.post(name, post);
@@ -234,3 +236,4 @@ public class RetwisController {
 		return "nodata";
 	}
 }
+
