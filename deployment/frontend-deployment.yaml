@@ -33,5 +33,5 @@ spec:
         - containerPort: 8080
       initContainers:
       - name: init-redis
-        image: busybox:1.28
+        image: php-redis
         command: ['sh', '-c', 'until nslookup redis-master; do echo "En attente de redis-master"; sleep 2; done;']
