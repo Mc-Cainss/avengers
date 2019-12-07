@@ -23,7 +23,7 @@ public class PostTest {
 	@Test
 	public void setUidTest() {
 		postTest.setUid("test");
-		assertEquals(postTest.getUid(),"test");
+		assertEquals(postTest.getUid(),"error");
 	}
 
 	@Test
