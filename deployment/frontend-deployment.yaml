@@ -7,7 +7,7 @@ spec:
     matchLabels:
       app: avengers
       tier: frontend
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
@@ -31,3 +31,7 @@ spec:
           # value: env
         ports:
         - containerPort: 8080
+      initContainers:
+      - name: init-redis
+        image: busybox:1.28
+        command: ['sh', '-c', 'until nslookup redis-master; do echo "En attente de redis-master"; sleep 2; done;']

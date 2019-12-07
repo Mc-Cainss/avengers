@@ -182,7 +182,7 @@ public class RetwisRepository {
 			}
 		}
 	}
-
+	
 	public String findUid(String name) {
 		return valueOps.get(KeyUtils.user(name));
 	}
