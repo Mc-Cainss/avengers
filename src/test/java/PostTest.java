@@ -17,13 +17,13 @@ public class PostTest {
 	@Test
 	public void setContentTest() {
 		postTest.setContent("test");
-		assertEquals(postTest.getContent(),"error");
+		assertEquals(postTest.getContent(),"test");
 	}
 
 	@Test
 	public void setUidTest() {
 		postTest.setUid("test");
-		assertEquals(postTest.getUid(),"error");
+		assertEquals(postTest.getUid(),"test");
 	}
 
 	@Test
