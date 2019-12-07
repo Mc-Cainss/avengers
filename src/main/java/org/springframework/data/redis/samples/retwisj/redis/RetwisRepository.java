@@ -137,29 +137,7 @@ public class RetwisRepository {
 /*	public Collection<String> getLikes(String pid) {
 		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
 	}*/
-/*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*//*	public Collection<String> getLikes(String pid) {
-		return covertUidsToLikes(KeyUtils.likes(pid)); // Attention verifier covertUidsToLikes
-	}*/
+
 	public void post(String username, WebPost post) {
 		Post p = post.asPost();
 
@@ -205,19 +183,6 @@ public class RetwisRepository {
 		}
 	}
 	
-	/*A supprimer*/
-		private void test1(Post post, String pid, String name) {
-		// find mentions
-		Collection<String> mentions = findMentions(post.getContent());
-
-		for (String mention : mentions) {
-			String uid = findUid(mention);
-			if (uid != null) {
-				mentions(uid).addFirst(pid);
-			}
-		}
-	}
-/* A supprimer*/
 	public String findUid(String name) {
 		return valueOps.get(KeyUtils.user(name));
 	}
