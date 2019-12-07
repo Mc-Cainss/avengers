@@ -26,10 +26,17 @@ pipeline {
     }
     }
     
+    stage('Results') {
+    steps {
+      junit '**/target/surefire-reports/TEST-*.xml'
+      archiveArtifacts 'target/surefire-reports/*.txt'
+    }
+   }
+    
    stage("Quality Gate"){
     steps{
     	withSonarQubeEnv('SonarQube') {
-                sh 'mvn clean package sonar:sonar'
+                sh 'mvn -Dmaven.test.skip=true clean package sonar:sonar'
 		}
           script{
 	  timeout(time: 1, unit: 'HOURS') {
@@ -41,12 +48,7 @@ pipeline {
 	}
        }
       }
-	stage('Results') {
-    steps {
-      junit '**/target/surefire-reports/TEST-*.xml'
-      archiveArtifacts 'target/surefire-reports/*.txt'
-    }
-   }
+
    
    	stage('Scan with Probely') {
     steps {
