@@ -30,15 +30,7 @@ public class Post {
 	private String replyPid;
 	private String replyUid;
 	
-/*	private List<String> likes;
-//test
-	public List<String> getLikes() {
-		return likes;
-	}
 
-	public void setLikes(List<String> likes) {
-		this.likes = likes;
-	}
 
 	/**
 	 * Returns the content.

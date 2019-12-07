@@ -34,19 +34,7 @@ public class WebPost {
 	private String time;
 	private String timeArg;
 	
-	/*private List<String> likes;
 	
-	//private boolean isLiked;
-
-
-
-	public List<String> getLikes() {
-		return likes;
-	}
-
-	public void setLikes(List<String> likes) {
-		this.likes = likes;
-	}*/
 
 	public WebPost() {
 	}
