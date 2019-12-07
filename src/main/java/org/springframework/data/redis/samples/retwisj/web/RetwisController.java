@@ -39,7 +39,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Costin Leau
  */
 @Controller
-public class RetwisController {
+public class RetwisController extends Exception{
 
 	@Autowired
 	private final RetwisRepository retwis;
@@ -130,9 +130,15 @@ public class RetwisController {
 		return "home";
 	}
 
-	@RequestMapping(value = "/!{name}", method = RequestMethod.POST)
-	public String posts(@PathVariable String name, WebPost post, Model model, HttpServletRequest request) {
+	@RequestMapping(value = "/!{name}", method = RequestMethod.POST) 
+	public String posts(@PathVariable String name, WebPost post, Model model, HttpServletRequest request) throws Exception {
+		
 		checkUser(name);
+		if(post.getContent().contains("fuck"))
+		{
+			throw new Exception("Error 500");
+			
+		}
 		retwis.post(name, post);
 		return "redirect:/!" + name;
 	}
