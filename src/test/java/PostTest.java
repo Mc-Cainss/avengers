@@ -7,41 +7,42 @@ import org.springframework.data.redis.samples.retwisj.Range;
 public class PostTest {
 
 	private Post postTest = null;
+	private string testValue = "test";
 
 	@Before
-	public void initRange() {
+	public void initPostTest() {
 		postTest = new Post();
 
 	}
 
 	@Test
 	public void setContentTest() {
-		postTest.setContent("test");
-		assertEquals(postTest.getContent(),"test");
+		postTest.setContent(testValue);
+		assertEquals(postTest.getContent(),testValue);
 	}
 
 	@Test
 	public void setUidTest() {
-		postTest.setUid("test");
-		assertEquals(postTest.getUid(),"test");
+		postTest.setUid(testValue);
+		assertEquals(postTest.getUid(),testValue);
 	}
 
 	@Test
 	public void setTimeTest() {
-		postTest.setTime("test");
-		assertEquals(postTest.getTime(),"test");
+		postTest.setTime(testValue);
+		assertEquals(postTest.getTime(),testValue);
 	}
 
 	@Test
 	public void setReplyPidTest() {
-		postTest.setReplyPid("test");
-		assertEquals(postTest.getReplyPid(),"test");
+		postTest.setReplyPid(testValue);
+		assertEquals(postTest.getReplyPid(),testValue);
 	}
 
 	@Test
 	public void setReplyUidTest() {
-		postTest.setReplyUid("test");
-		assertEquals(postTest.getReplyUid(),"test");
+		postTest.setReplyUid(testValue);
+		assertEquals(postTest.getReplyUid(),testValue);
 
 	}
 

@@ -9,17 +9,19 @@ import org.springframework.data.redis.samples.retwisj.User;
 public class RetwisControllerTest {
 
 	private User userTest = null;
+	private string testName = "nom";
+	private string testPassword = "pass";
 
 	@Before
 	public void initRange() {
-		userTest= new User("nom","pass");
+		userTest= new User(testName,testPassword);
 
 	}
 
 	@Test
 	public void newUserTest() {
-		assertEquals(userTest.getName(),"nom");
-		assertEquals(userTest.getPass(),"pass");	
+		assertEquals(userTest.getName(),testName);
+		assertEquals(userTest.getPass(),testPassword);	
 	}	
 	
 	@Test
@@ -31,14 +33,16 @@ public class RetwisControllerTest {
 	
 	@Test
 	public void setPassTest() {
-		userTest.setPass("newpass");
-		assertEquals(userTest.getPass(),"newpass");	
+		string testNewPassword = "newpass";
+		userTest.setPass(testNewPassword);
+		assertEquals(userTest.getPass(),testNewPassword);	
 	}
 	
 	@Test
 	public void setAuthKeyTest() {
-		userTest.setAuthKey("auth");
-		assertEquals(userTest.getAuthKey(),"auth");	
+		string testAuthKey = "auth";
+		userTest.setAuthKey(testAuthKey);
+		assertEquals(userTest.getAuthKey(),testAuthKey);	
 	}
 
 
