@@ -17,35 +17,35 @@ public class PostTest {
 
 	@Test
 	public void setContentTest() {
-		string testValue = "test";
+		String testValue = "test";
 		postTest.setContent(testValue);
 		assertEquals(postTest.getContent(),testValue);
 	}
 
 	@Test
 	public void setUidTest() {
-		string testValue = "test";
+		String testValue = "test";
 		postTest.setUid(testValue);
 		assertEquals(postTest.getUid(),testValue);
 	}
 
 	@Test
 	public void setTimeTest() {
-		string testValue = "test";
+		String testValue = "test";
 		postTest.setTime(testValue);
 		assertEquals(postTest.getTime(),testValue);
 	}
 
 	@Test
 	public void setReplyPidTest() {
-		string testValue = "test";
+		String testValue = "test";
 		postTest.setReplyPid(testValue);
 		assertEquals(postTest.getReplyPid(),testValue);
 	}
 
 	@Test
 	public void setReplyUidTest() {
-		string testValue = "test";
+		String testValue = "test";
 		postTest.setReplyUid(testValue);
 		assertEquals(postTest.getReplyUid(),testValue);
 

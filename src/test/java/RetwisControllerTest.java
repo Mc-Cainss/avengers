@@ -15,16 +15,16 @@ public class RetwisControllerTest {
 
 	@Before
 	public void initUserName() {
-		string testName = "nom";
-		string testPassword = "pass";
+		String testName = "nom";
+		String testPassword = "pass";
 		userTest= new User(testName,testPassword);
 
 	}
 
 	@Test
 	public void newUserTest() {
-		string testName = "nom";
-		string testPassword = "pass";
+		String testName = "nom";
+		String testPassword = "pass";
 		assertEquals(userTest.getName(),testName);
 		assertEquals(userTest.getPass(),testPassword);	
 	}	
@@ -38,14 +38,14 @@ public class RetwisControllerTest {
 	
 	@Test
 	public void setPassTest() {
-		string testNewPassword = "newpass";
+		String testNewPassword = "newpass";
 		userTest.setPass(testNewPassword);
 		assertEquals(userTest.getPass(),testNewPassword);	
 	}
 	
 	@Test
 	public void setAuthKeyTest() {
-		string testAuthKey = "auth";
+		String testAuthKey = "auth";
 		userTest.setAuthKey(testAuthKey);
 		assertEquals(userTest.getAuthKey(),testAuthKey);	
 	}
