@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: init-container
+  labels:
+    app: init-container-pods
+spec:
+  containers:
+  - name: lancement-container
+    image: busybox:1.28
+    command: ['sh', '-c', 'echo "Les containers s''exécutent!" && sleep 3600']
+  initContainers:
+  - name: init-daemon
+    image: busybox:1.28
+    command: ['sh', '-c', 'until nslookup startupscript; do echo "En attente de startupscript"; sleep 2; done;']
+  - name: init-db
+    image: busybox:1.28
+    command: ['sh', '-c', 'until nslookup sonar-postgres; do echo "En attente de sonar-postgres"; sleep 2; done;']
+  - name: init-sonar
+    image: busybox:1.28
+    command: ['sh', '-c', 'until nslookup sonarqube; do echo "En attente de sonarqube"; sleep 2; done;']
