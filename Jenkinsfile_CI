@@ -36,7 +36,7 @@ pipeline {
    stage("Quality Gate"){
     steps{
     	withSonarQubeEnv('SonarQube') {
-                sh 'mvn clean package sonar:sonar'
+                sh 'mvn -Dmaven.test.skip=true clean package sonar:sonar'
 		}
           script{
 	  timeout(time: 1, unit: 'HOURS') {
