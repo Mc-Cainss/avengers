@@ -15,7 +15,7 @@
  */
 package org.springframework.data.redis.samples.retwisj.web;
 
-import java.util.List;
+
 
 import org.springframework.data.redis.samples.retwisj.Post;
 

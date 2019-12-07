@@ -19,7 +19,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.data.redis.samples.retwisj.web.Error500Exception;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.samples.retwisj.Post;
