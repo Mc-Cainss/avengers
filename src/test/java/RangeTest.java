@@ -7,17 +7,19 @@ import org.springframework.data.redis.samples.retwisj.Range;
 public class RangeTest {
 	
 	private Range testRange = null;
-	private int defaultRange =10;
-	private int testValue = 11;
+	
+	
 	
 	@Test
 	public void defaultRangeTest() {
+		int defaultRange =10;
 		testRange = new Range();
 		assertEquals(((testRange.end-testRange.begin)+1),defaultRange);
 	}
 	
 	@Test
 	public void setPageNumberTest() {
+		int testValue = 11;
 		testRange = new Range(testValue);
 		assertEquals(testRange.getPages(),testValue);
 	}	

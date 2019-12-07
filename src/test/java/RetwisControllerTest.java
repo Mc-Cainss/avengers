@@ -8,18 +8,23 @@ import org.springframework.data.redis.samples.retwisj.User;
 
 public class RetwisControllerTest {
 
+
 	private User userTest = null;
-	private string testName = "nom";
-	private string testPassword = "pass";
+	
+	
 
 	@Before
-	public void initRange() {
+	public void initUserName() {
+		string testName = "nom";
+		string testPassword = "pass";
 		userTest= new User(testName,testPassword);
 
 	}
 
 	@Test
 	public void newUserTest() {
+		string testName = "nom";
+		string testPassword = "pass";
 		assertEquals(userTest.getName(),testName);
 		assertEquals(userTest.getPass(),testPassword);	
 	}	
@@ -44,6 +49,7 @@ public class RetwisControllerTest {
 		userTest.setAuthKey(testAuthKey);
 		assertEquals(userTest.getAuthKey(),testAuthKey);	
 	}
+
 
 
 }
